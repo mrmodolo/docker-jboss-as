@@ -1,15 +1,12 @@
-jboss:
+jbossas711Final:
 
   ports:
     - "8080:8080"
 
-  cap_add:
-    - SYS_ADMIN
-
-  hostname: jboss-as
+  hostname: jboss
 
   stdin_open: true
 
   tty: true
 
-  image: modolo/jboss-as:7.1.1.Final
+  image: modolo/docker-jboss-as:7.1.1.Final
