@@ -1,14 +1,16 @@
-# modolo/jboss-as:7.1.1.Final
+# modolo/docker-jboss-as:7.1.1.Final
 
 JBoss AS 7.1.1.Final 
 
 ## Installation
 
-docker run -it --rm modolo/jboss-as:7.1.1.Final
+docker run -it --rm modolo/docker-jboss-as:7.1.1.Final
 
 ## Usage
 
-docker run -it --rm modolo/jboss-as:7.1.1.Final
+docker run -it --rm modolo/docker-jboss-as:7.1.1.Final
+
+docker-compose run --rm --service-ports jbossas711Final
 
 ## Contributing
 
