@@ -6,4 +6,4 @@ JBOSS_HOME="$HOME/$JBOSS_VERSION"
 
 cd $JBOSS_HOME/bin
 
-su -c "$JBOSS_HOME/bin/standalone.sh" jboss
+su -c "$JBOSS_HOME/bin/standalone.sh &> /dev/null" jboss
