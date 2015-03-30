@@ -1,6 +1,8 @@
 # modolo/docker-jboss-as:7.1.1.Final
 
 JBoss AS 7.1.1.Final 
+O container container está configurado para o timezone America/Sao_Paulo
+e locale pt_BR.UTF-8.
 
 ## Installation
 
