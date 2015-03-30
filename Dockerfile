@@ -6,11 +6,11 @@ FROM dockerfile/java:oracle-java7
 MAINTAINER InfraTI Operacoes <InfraTIOperacoes@globosat.com.br>
 
 # Configura o timezone para America/Sao_Paulo
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes locales
 RUN echo "America/Sao_Paulo" > /etc/timezone && \
 	dpkg-reconfigure -f noninteractive tzdata
 
 # Configura o locale para pt_BR.UTF-8
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes locales
 RUN export LANGUAGE=pt_BR.UTF-8; export LANG=pt_BR.UTF-8; \
 	export LC_ALL=pt_BR.UTF-8; locale-gen pt_BR.UTF-8;
 RUN DEBIAN_FRONTEND=noninteractive dpkg-reconfigure locales
